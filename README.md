@@ -27,13 +27,14 @@
     }
 }
 <br>styles文件设置<br>
-</style>
+
     <style name="window_translucent" parent="android:Theme">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
-
     <style name="swipeback_activity_style" parent="window_translucent"></style>
+   
+    
 <br>AndroidManifest.xml文件添加主题<br>
 android:theme="@style/swipeback_activity_style"
