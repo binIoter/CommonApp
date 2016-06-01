@@ -4,7 +4,8 @@
 3. Activity的背景会被设置为透明的,这样在显示内容的View滑动的过程中才可以显示出底层View.<br><br>
 ![image](https://github.com/binIoter/SwipeBackActivity/blob/master/app/src/main/res/assets/sweepbackactivity.gif )
 ## usage<br>
-#### 在BaseActivity中进行初始化,并且通过调用setSwipeBackEnabled()方法控制当前Activity是否可以右滑关闭 <br>
+在BaseActivity中进行初始化,并且通过调用setSwipeBackEnabled()方法控制当前Activity是否可以右滑关闭 <br>
+
 public class BaseActivity extends Activity {
     protected SwipeBackLayout mSwipeBackLayout;
 
