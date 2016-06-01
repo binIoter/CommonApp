@@ -3,10 +3,12 @@
 2. 对SwipeBackLayout实例借助Scroller类调用ScrollTo方法来实现滑动显示内容的View.<br>
 3. Activity的背景会被设置为透明的,这样在显示内容的View滑动的过程中才可以显示出底层View.<br><br>
 ![image](https://github.com/binIoter/SwipeBackActivity/blob/master/app/src/main/res/assets/sweepbackactivity.gif )
-## usage<br>
-在BaseActivity中进行初始化,并且通过调用setSwipeBackEnabled()方法控制当前Activity是否可以右滑关闭 <br>
 
-public class BaseActivity extends Activity {
+
+## usage<br>
+ 在BaseActivity中进行初始化,并且通过调用setSwipeBackEnabled()方法控制当前Activity是否可以右滑关闭 <br>
+ 
+ public class BaseActivity extends Activity {
     protected SwipeBackLayout mSwipeBackLayout;
 
     @Override
