@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import com.blog.www.swipebackactivity.tintbar.TopTitleBar;
 
 public class MainActivity extends BaseActivity {
 
@@ -12,6 +13,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setSwipeBackEnabled(false);
+        initTitle();
         Button btn = (Button) findViewById(R.id.btn_jump);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,5 +23,10 @@ public class MainActivity extends BaseActivity {
         });
     }
 
+    private void initTitle() {
+        TopTitleBar topTitleBar = (TopTitleBar) findViewById(R.id.title_bar);
+        topTitleBar.setTitle("首页");
+        initBar(topTitleBar);
+    }
 
 }

@@ -5,12 +5,7 @@
     android:background="#ffffff"
     tools:context="com.blog.www.swipebackactivity.SecondActivity">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_back"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
-        android:text="返回" />
+    <include layout="@layout/common_title_bar" />
+
 
 </RelativeLayout>
