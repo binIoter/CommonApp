@@ -1,11 +1,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ffffff"
-    tools:context="com.blog.www.swipebackactivity.SecondActivity">
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#ffffff"
+  tools:context="com.blog.www.swipebackactivity.SecondActivity">
 
-    <include layout="@layout/common_title_bar" />
-
+  <com.blog.www.swipebackactivity.tintbar.TopTitleBar
+    android:id="@+id/title_bar"
+    style="@style/title_bar" />
 
 </RelativeLayout>

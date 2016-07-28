@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import com.blog.www.swipebackactivity.app.AppManager;
 import com.blog.www.swipebackactivity.tintbar.TitleBarHelper;
 import com.blog.www.swipebackactivity.tintbar.TopTitleBar;
 
@@ -13,10 +14,11 @@ public class BaseActivity extends Activity {
 
     protected SwipeBackLayout mSwipeBackLayout;
     protected TopTitleBar topTitleBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base);
+        AppManager.getInst().pushActivity(this);
         mSwipeBackLayout = new SwipeBackLayout(this);
         mSwipeBackLayout.attachToActivity(this);
         mSwipeBackLayout.setBgTransparent();
@@ -61,5 +63,11 @@ public class BaseActivity extends Activity {
 
     public static boolean hasLollipop() {
         return Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP;
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        AppManager.getInst().popActivity();
     }
 }

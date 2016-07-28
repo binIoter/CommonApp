@@ -8,25 +8,23 @@ import com.blog.www.swipebackactivity.tintbar.TopTitleBar;
 
 public class MainActivity extends BaseActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        setSwipeBackEnabled(false);
-        initTitle();
-        Button btn = (Button) findViewById(R.id.btn_jump);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, SecondActivity.class));
-            }
-        });
-    }
+  @Override protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    setSwipeBackEnabled(false);
+    initTitleBar();
+    Button btn = (Button) findViewById(R.id.btn_jump);
+    btn.setOnClickListener(new View.OnClickListener() {
+      @Override public void onClick(View view) {
+        startActivity(new Intent(MainActivity.this, SecondActivity.class));
+      }
+    });
+  }
 
-    private void initTitle() {
-        TopTitleBar topTitleBar = (TopTitleBar) findViewById(R.id.title_bar);
-        topTitleBar.setTitle("首页");
-        initBar(topTitleBar);
-    }
-
+  private void initTitleBar() {
+    TopTitleBar topTitleBar = (TopTitleBar) findViewById(R.id.title_bar);
+    topTitleBar.setTitle("首页");
+    topTitleBar.setLeftVisible(false);
+    initBar(topTitleBar);
+  }
 }

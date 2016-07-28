@@ -1,18 +1,34 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme">
-        <!-- Customize your theme here. -->
-    </style>
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="android:Theme">
+    <!-- Customize your theme here. -->
+  </style>
 
-    <style name="window_translucent" parent="android:Theme">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowNoTitle">true</item>
+  <style name="window_translucent" parent="android:Theme">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:colorBackgroundCacheHint">@null</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowNoTitle">true</item>
 
-    </style>
+  </style>
 
-    <style name="swipeback_activity_style" parent="window_translucent"></style>
+  <style name="swipeback_activity_style" parent="window_translucent"></style>
 
+  <declare-styleable name="TopTitleBar">
+    <!-- 定义titlebar中间标题-->
+    <attr name="tb_title" format="reference" />
+    <!-- 定义titlebar背景色-->
+    <attr name="tb_background" format="color" />
+    <!-- 定义titlebar返回按钮图片-->
+    <attr name="tb_back_icon" format="reference" />
+    <!-- 定义titlebar分割线是否可见-->
+    <attr name="tb_divider_visible" format="boolean" />
+  </declare-styleable>
+
+  <style name="title_bar">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/title_height</item>
+    <item name="android:background">@color/title_bar_color</item>
+  </style>
 </resources>
