@@ -31,4 +31,18 @@
     <item name="android:layout_height">@dimen/title_height</item>
     <item name="android:background">@color/title_bar_color</item>
   </style>
+
+  <style name="Dialog" parent="android:style/Theme.Dialog">
+    <item name="android:background">@android:color/white</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:backgroundDimAmount">0.3</item>
+    <item name="android:colorBackgroundCacheHint">@null</item>
+    <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    <item name="android:windowIsFloating">true</item>
+  </style>
 </resources>

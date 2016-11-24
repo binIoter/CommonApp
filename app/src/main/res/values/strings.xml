@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">SwipeBackActivity</string>
+  <string name="app_name">CommonApp</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_base">BaseActivity</string>
-    <string name="title_activity_second">SecondActivity</string>
-    <string name="back">返回</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="action_settings">Settings</string>
+  <string name="title_activity_base">BaseActivity</string>
+  <string name="title_activity_dialog">CommonDialogActivity</string>
+  <string name="back">返回</string>
+  <string name="btn_sure">确定</string>
+  <string name="btn_cancel">取消</string>
+  <string name="tips">提示</string>
 </resources>

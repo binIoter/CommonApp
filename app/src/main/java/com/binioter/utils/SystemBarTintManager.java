@@ -1,4 +1,4 @@
-package com.blog.www.swipebackactivity;
+package com.binioter.utils;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;

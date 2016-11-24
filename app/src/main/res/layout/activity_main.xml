@@ -3,9 +3,9 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:background="#ffffff"
-  tools:context=".MainActivity">
+  tools:context="com.binioter.ui.MainActivity">
 
-  <com.blog.www.swipebackactivity.tintbar.TopTitleBar
+  <com.binioter.widget.TopTitleBar
     android:id="@+id/title_bar"
     style="@style/title_bar" />
 

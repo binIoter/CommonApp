@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@android:color/white"
+  android:orientation="vertical">
+
+  <com.binioter.widget.TopTitleBar
+    android:id="@+id/title_bar"
+    style="@style/title_bar" />
+
+  <LinearLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_20">
+
+
+    <Button
+      android:id="@+id/btn_no_title_one_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="无标题一个按钮" />
+
+    <Button
+      android:id="@+id/btn_no_title_two_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="无标题两个按钮" />
+
+    <Button
+      android:id="@+id/btn_with_title_one_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="有标题一个按钮" />
+
+    <Button
+      android:id="@+id/btn_with_title_two_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="有标题两个按钮" />
+
+  </LinearLayout>
+</LinearLayout>

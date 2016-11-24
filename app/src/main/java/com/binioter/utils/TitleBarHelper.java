@@ -1,9 +1,10 @@
-package com.blog.www.swipebackactivity.tintbar;
+package com.binioter.utils;
 
 import android.app.Activity;
 import android.content.Context;
 import android.view.View;
-import com.blog.www.swipebackactivity.R;
+import com.binioter.R;
+import com.binioter.widget.TopTitleBar;
 
 public class TitleBarHelper {
 
