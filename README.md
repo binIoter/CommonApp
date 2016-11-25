@@ -1,7 +1,11 @@
-## 原理<br>
-1. 继承自FrameLayout,将Activity中显示内容的View添加到到SwipeBackLayout的实例中,再将SwipeBackLayout的实例添加到Activity中.<br>
-2. 对SwipeBackLayout实例借助Scroller类调用ScrollTo方法来实现滑动显示内容的View.<br>
-3. Activity的背景会被设置为透明的,这样在显示内容的View滑动的过程中才可以显示出底层View.<br><br>
+## 简介<br>
+CommonApp,旨在帮助开发者进行组件化开发，包含了App通用的模块，各个模块采用单独module进行维护，目前包含以下模块：<br>
+* 沉浸式状态栏模块 
+* 通用的titlebar模块
+* Activity堆栈管理器模块
+* 全局右滑关闭页面模块
+* 通用dialog,流式标签模块
+* 持续更新中...<br>
 ![image](https://github.com/binIoter/CommonApp/blob/master/app/src/main/file/review.gif )
 
 
