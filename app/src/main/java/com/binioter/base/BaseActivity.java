@@ -8,6 +8,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import com.binioter.R;
 import com.binioter.app.AppManager;
+import com.binioter.util.UIUtils;
 import com.binioter.utils.SystemBarTintManager;
 import com.binioter.utils.TitleBarHelper;
 import com.binioter.widget.SwipeBackLayout;
@@ -44,7 +45,7 @@ public class BaseActivity extends Activity {
                     // | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                     | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(getColor(R.color.title_bar_color));
+            window.setStatusBarColor(UIUtils.getColor(this,R.color.title_bar_color));
         }
 
     }

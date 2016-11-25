@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@android:color/white"
+  android:orientation="vertical">
+
+  <com.binioter.widget.TopTitleBar
+    android:id="@+id/title_bar"
+    style="@style/title_bar"
+    app:tb_title="@string/title_activity_flow" />
+
+  <com.binioter.flowtag.FlowLayout
+    android:id="@+id/flow_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_20"
+    app:horizontal_spacing="@dimen/dimen_10"
+    app:vertical_spacing="@dimen/dimen_10" />
+
+</LinearLayout>
