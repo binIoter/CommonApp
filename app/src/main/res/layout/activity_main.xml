@@ -1,8 +1,9 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:background="#ffffff"
+  android:orientation="vertical"
   tools:context="com.binioter.ui.MainActivity">
 
   <com.binioter.widget.TopTitleBar
@@ -10,11 +11,17 @@
     style="@style/title_bar" />
 
   <Button
-    android:id="@+id/btn_jump"
+    android:id="@+id/btn_jump_dialog_aty"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:layout_margin="20dp"
-    android:text="打开下一个页面" />
+    android:layout_margin="10dp"
+    android:text="打开CommonDialogActivity" />
 
-</RelativeLayout>
+  <Button
+    android:id="@+id/btn_jump_flow_aty"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="打开FlowLayoutActivity" />
+
+</LinearLayout>

@@ -22,6 +22,9 @@
     <activity
       android:name="com.binioter.ui.CommonDialogActivity"
       android:label="@string/title_activity_dialog" />
+    <activity
+      android:name="com.binioter.ui.FlowLayoutActivity"
+      android:label="@string/title_activity_flow" />
   </application>
 
 </manifest>

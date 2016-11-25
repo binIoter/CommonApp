@@ -18,7 +18,7 @@ import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
 import android.widget.Scroller;
 import com.binioter.R;
-import com.binioter.utils.DevUtils;
+import com.binioter.util.DensityUtil;
 
 /**
  * <h1>滑动返回</h1> <br>
@@ -113,7 +113,7 @@ public class SwipeBackLayout extends FrameLayout {
         mMinimumVelocity = ViewConfiguration.getMinimumFlingVelocity();
         final float density = context.getResources().getDisplayMetrics().density;
         mMoveDistance = (int) (MIN_DISTANCE_FOR_MOVE * density);
-        int deviceWidth = DevUtils.getEquipmentWidth(context);
+        int deviceWidth = DensityUtil.getEquipmentWidth(context);
         mFlingDistance = deviceWidth / 4;
     }
 

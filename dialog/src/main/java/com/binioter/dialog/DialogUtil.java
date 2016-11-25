@@ -1,10 +1,9 @@
-package com.binioter.utils;
+package com.binioter.dialog;
 
 import android.content.Context;
 import android.content.DialogInterface;
 import android.text.TextUtils;
 import android.widget.LinearLayout;
-import com.binioter.widget.CustomDialog;
 
 /**
  * 创建时间: 2016/11/18 14:15 <br>

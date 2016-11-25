@@ -1,8 +1,9 @@
-package com.binioter.widget;
+package com.binioter.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.os.Build;
 import android.support.annotation.AnimatorRes;
 import android.text.TextUtils;
 import android.view.Display;
@@ -14,7 +15,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.binioter.R;
 
 /**
  * 创建时间: 2016/11/18 13:43 <br>
@@ -242,7 +242,9 @@ public class CustomDialog extends Dialog {
       lp.width = (int) (display.getWidth() * 0.9); //设置宽度
       dialog.getWindow().setAttributes(lp);
       window.setGravity(mGravity);
-      window.setWindowAnimations(mAnimation);
+      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
+        window.setWindowAnimations(mAnimation);
+      }
       dialog.setCancelable(isCancelable);
       dialog.setContentView(layout);
       return dialog;
