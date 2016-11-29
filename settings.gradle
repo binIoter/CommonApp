@@ -1,1 +1,1 @@
-include ':app', ':flowtag', ':commonutil', ':dialog'
+include ':app', ':flowtag', ':commonutil', ':dialog', ':tiptextview'

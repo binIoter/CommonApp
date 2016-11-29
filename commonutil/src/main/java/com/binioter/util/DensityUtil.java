@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.DisplayMetrics;
 import android.view.Surface;
 import android.view.WindowManager;
+import java.lang.reflect.Field;
 
 /**
  * 创建时间: 2016/11/25 11:22 <br>
@@ -50,5 +51,25 @@ public class DensityUtil {
       displayMetricsWidthPixels = metric.widthPixels; // 屏幕宽度（像素）
     }
     return displayMetricsWidthPixels;
+  }
+
+  /**
+   * 获取状态栏/通知栏的高度
+   */
+  public static int getStatusBarHeight(Context context) {
+    Class<?> c = null;
+    Object obj = null;
+    Field field = null;
+    int x = 0, sbar = 0;
+    try {
+      c = Class.forName("com.android.internal.R$dimen");
+      obj = c.newInstance();
+      field = c.getField("status_bar_height");
+      x = Integer.parseInt(field.get(obj).toString());
+      sbar = context.getResources().getDimensionPixelSize(x);
+    } catch (Exception e1) {
+      e1.printStackTrace();
+    }
+    return sbar;
   }
 }

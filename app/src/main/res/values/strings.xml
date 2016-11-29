@@ -6,6 +6,10 @@
   <string name="title_activity_base">BaseActivity</string>
   <string name="title_activity_dialog">CommonDialogActivity</string>
   <string name="title_activity_flow">FlowLayoutActivity</string>
+  <string name="title_activity_tips">TipTextViewActivity</string>
   <string name="back">返回</string>
+  <string name="show_tips">弹出tips</string>
+  <string name="hide_tips">隐藏tips</string>
+  <string name="txt_tips">我是带动画弹出的tips</string>
 
 </resources>

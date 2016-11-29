@@ -25,6 +25,9 @@
     <activity
       android:name="com.binioter.ui.FlowLayoutActivity"
       android:label="@string/title_activity_flow" />
+    <activity
+      android:name="com.binioter.ui.TipTextViewActivity"
+      android:label="@string/title_activity_tips" />
   </application>
 
 </manifest>

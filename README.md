@@ -5,6 +5,7 @@ CommonApp,旨在帮助开发者进行组件化开发，包含了App通用的模�
 * Activity堆栈管理器模块
 * 全局右滑关闭页面模块
 * 通用dialog,流式标签模块
+* 带动画的提示TextView
 * 持续更新中...<br>
 ![image](https://github.com/binIoter/CommonApp/blob/master/app/src/main/file/review.gif )
 
